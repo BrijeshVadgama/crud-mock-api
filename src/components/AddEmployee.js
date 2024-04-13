@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 const Addemployees = () => {
-  const apiURL = "YOUR API URL";
+  const apiURL = "https://65d6d5fef6967ba8e3beadc1.mockapi.io/employee";
   const { id } = useParams();
   const navigate = useNavigate();
   const [data, setData] = useState({});

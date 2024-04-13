@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Faculty() {
-  const api = "YOUR API URL";
+  const api = "https://65d6d5fef6967ba8e3beadc1.mockapi.io/employee";
   const navigate = useNavigate();
   const goToFacDetails = (id) => {
     navigate(`/EmployeeDetails/${id}`);

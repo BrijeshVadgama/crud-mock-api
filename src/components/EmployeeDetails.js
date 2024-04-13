@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 function FacultyDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const api = "YOUR API URL";
+  const api = "https://65d6d5fef6967ba8e3beadc1.mockapi.io/employee";
 
   function backToHome() {
     navigate(-1);
@@ -15,7 +15,7 @@ function FacultyDetails() {
   }
 
   function deleteFac() {
-    fetch(api + id, {
+    fetch(api + "/" + id, {
       method: "DELETE",
     })
       .then((res) => res.json())
